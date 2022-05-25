@@ -1,0 +1,115 @@
+
+.cuerpo {
+    background-color: #C3E6F3;
+    font-weight: bold;
+}
+.titulo {
+    text-align: center;
+    color: #660000 ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    height: 50px;
+}
+.contenidoPagina {
+    text-align: center;
+    color: #17181C;
+    font-size: 30px;
+}
+.contenedorPrincipal {
+    min-height: calc(100vh - 50px - 80px);
+}
+.contenedor {
+        border: 3px solid;
+        padding: 5px;
+        padding-left: 15px;
+        margin-left: 25%;
+        margin-right: 25%;
+        border-radius: 15px;
+}
+.lista {
+    text-align: center; 
+}
+.dentroLista {
+    display: inline-block;
+    list-style: none;
+    margin-left: 10px;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.enlaces {
+    text-decoration: none;
+    color: #1C1887;
+}
+.enlaces:hover {
+    color: #FFA632;
+}
+.imgContenido{
+    width: 20%;
+    margin:3% auto;
+	display:block;
+
+}
+table {
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+th {
+    width: 170px;
+    height: 50px;
+}
+td {
+    width: 500px;
+    height: 40px;
+    text-align: left;
+    padding: 10px;
+}
+.pieDePagina{
+    background-color: black;
+    height: 80px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.menu{
+    height: 60px;
+    background-color:#17181C;
+    text-align: center;
+}
+
+.submenu:hover {
+    color: #C3E6F3;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+.submenu{
+    color: white;
+     font-weight: bold;
+     text-decoration: none;
+     font-size: 20px;
+     display: inline-block;
+     list-style: none;
+     margin-left: 15px;
+}
+/*nav ul li{
+    float: left;
+    margin-top: 20px;
+}
+
+
+nav ul{
+        list-style: none;
+        display: inline-block;
+        padding:18px;
+}
+nav ul li a {
+     color: white;
+     font-weight: bold;
+     text-decoration: none;
+     font-size: 20px;
+     padding: 18px;
+}
+
+nav ul li a:hover{
+    background-color: #929fb3;
+}*/

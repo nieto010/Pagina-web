@@ -1,0 +1,71 @@
+.cuerpo {
+    background-color: #C3E6F3;
+    font-weight: bold;
+}
+.titulo {
+    text-align: center;
+    color: #660000 ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    height: 50px;
+}
+.contenidoPagina {
+    text-align: center;
+    color: #17181C;
+    font-size: 30px;
+}
+.contenedorPrincipal {
+    min-height: calc(100vh - 50px - 80px);
+}
+.menu{
+    height: 60px;
+    background-color:#17181C;
+    text-align: center;
+}
+
+.submenu:hover {
+    color: #C3E6F3;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+.submenu{
+    color: white;
+     font-weight: bold;
+     text-decoration: none;
+     font-size: 20px;
+     display: inline-block;
+     list-style: none;
+     margin-left: 15px;
+}
+.descripcion {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.formulario {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contenedorOculto{
+    display: none;
+    border: 3px solid;
+    padding: 5px;
+    padding-left: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.camposOcultos{
+    text-align: left;
+}
+.pieDePagina{
+    background-color: black;
+    height: 80px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
