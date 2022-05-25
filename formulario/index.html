@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Formulario </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial scale=1.0">
+		<meta http-equiv="X-UA-Compatible" Content="ie=edge">
+		<meta name= "Author" content="José Nieto">
+		<meta name="Description" content="Formulario">
+		<meta name="Keywords" content="Proyecto, Formulario, Web">
+		<link rel="stylesheet" href="css/estilo.css" type="text/css">
+        <link rel="shortcut icon" href="./icono.ico">
+        <style>
+            .flex-content {
+                display: flex;
+                flex-flow: row wrap;
+            }
+            .flex-content > div {
+                margin: 5px;
+                padding: 5px;
+            }
+            </style>
+
+        <script>
+            function comprobarCampos(){
+                var c_nombre = document.getElementById("nom").value;
+                var c_mensaje = document.getElementById("message").value;
+                
+                if(c_nombre.length == 0 || c_mensaje.length == 0){            
+                    alert("Por favor, rellene todos los campos antes de enviar el formulario.");
+                }else{
+                    mostrarComentario();
+                }
+            }
+
+            function mostrarComentario(){
+                var c_nombre = document.getElementById("nom").value;
+                document.getElementById("nombreComent").innerHTML = c_nombre;
+
+                var c_mensaje = document.getElementById("message").value;
+                document.getElementById("mensajeComent").innerHTML = c_mensaje;
+
+                comentarios.style.display = "block";
+            }
+        </script>
+</head>
+<body class="cuerpo">
+    <header class="titulo">
+        <h1> Proyecto final de José Antonio Nieto Casillas </h1>
+    </header>
+    <nav class="menu">
+        <ul class="submenu">
+          <li class="submenu"><a class="submenu" href="../index.html">Inicio</a></li>
+          <li class="submenu"><a class="submenu" href="../lenguajes/index.html">Lenguajes</a></li>
+          <li class="submenu"><a class="submenu" href="../contacto/index.html">Contacto</a></li>
+          <li class="submenu"><a class="submenu" href="../quienesSomos/index.html">Quienes somos</a></li>
+          <li class="submenu"><a class="submenu" href="../multimedia/index.html">Multimedia</a></li>
+          <li class="submenu"><a class="submenu" href="./index.html">Formulario</a></li>
+          <li class="submenu"><a class="submenu" href="../habilidades/index.html">Habilidades</a></li>
+        </ul>
+      </nav>
+      <h2 class="contenidoPagina">Formulario</h2>
+      <h3 class="contenidoPagina"><em>Formulario de opinión de José Antonio Nieto Casillas</em></h3>
+	<div class="contenedorPrincipal">
+        <p class="descripcion"> Hola, bienvenido al formulario de opinión de José Antonio Nieto Casillas. </p> <br>
+        <form class="formulario" method="get">
+            <section>  
+                <label>Nombre y Apellidos: 
+				    <br>
+				    <input type="text" id="nom" size="40">
+			    </label>
+			    <br><br>
+			    <label>Fecha de nacimiento: <input type="date" name="nacimiento" min="1900"></label>
+			        <p>Sexo:
+				    <input type="radio" name="hmo" value="h"> Hombre
+				    <input type="radio" name="hmo" value="m"> Mujer
+                    <input type="radio" name="hmo" value="o"> Otro
+			        </p>
+                <p>¿Cual de los 4 lenguajes que hemos visto este curso te gusta más?</p>
+                <select id="lenguaje">
+                    <option>Elige una opción</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>PHP</option>
+                </select>
+                <p>Escribe aquí porque elegiste ese lenguaje:</p>
+                <textarea id="message" rows="10" cols="70" size="500px"></textarea>
+                <br><br>
+			    <input class='button1' type="button" value="Enviar" onclick="comprobarCampos()">
+			    <input class='button2' type="reset" value="Borrar">
+            </section>
+	    </form>
+    </div>
+    <div class="contenedorOculto" id="comentarios">
+        <p style="text-align: center;">Comentarios:</p>
+        <label>Nombre:</label> <p id="nombreComent"></p>
+        <label>Comentario:</label> <p id="mensajeComent"></p>
+    </div>
+    <footer class="pieDePagina">
+        <div class="flex-content">
+            <p style="text-align: inherit; color: ivory; margin-right: 10px;"><b><i> ©José Antonio Nieto Casillas 2021
+            </i></b></p>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./imagenes/facebook.ico" width="50px"></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./imagenes/instagram.ico" width="50px"></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="./imagenes/twitter.ico" width="50px"></a>
+            </div>
+            <div>
+                <a href="https://www.whatsapp.com/?lang=es"><img src="./imagenes/whatsapp.ico" alt="aaa" width="50px"></a>
+            </div>
+            <div>
+                <a href="mailto:janietoc04@educarex.es"><img src="./imagenes/correo-electronico.ico" alt="aa" width="50px"></a>
+            </div>
+        </div>
+    </footer>
+</body>
